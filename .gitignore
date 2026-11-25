@@ -1,0 +1,6 @@
+.pio/
+sdkconfig.atom-echo
+sdkconfig.*
+!sdkconfig.defaults
+__pycache__/
+.vscode/

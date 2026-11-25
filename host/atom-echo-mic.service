@@ -1,0 +1,12 @@
+[Unit]
+Description=Atom Echo USB serial microphone bridge
+After=pipewire-pulse.service wireplumber.service
+Wants=pipewire-pulse.service
+
+[Service]
+ExecStart=%h/.local/bin/atom-echo-bridge --port auto --baud 500000
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
